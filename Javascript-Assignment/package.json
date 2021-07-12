@@ -1,0 +1,17 @@
+{
+  "name": "javascript-assignment",
+  "version": "1.0.0",
+  "description": "Javascript based assignment, from Trifork.",
+  "main": "App.js",
+  "repository": "https://github.com/MinikLambrecht/TriforkAssignment.git",
+  "author": "Minik Gaarde Lambrecht <MinikGLambrecht@hotmail.com>",
+  "license": "UNLICENSED",
+  "type": "module",
+  "private": false,
+  "scripts": {
+    "start": "node App.js"
+  },
+  "dependencies": {
+    "inquirer": "^8.1.1"
+  }
+}
