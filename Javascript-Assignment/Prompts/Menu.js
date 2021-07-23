@@ -3,6 +3,7 @@ import inquirer from 'inquirer';
 
 // Import Prompts
 import { Exit } from './Exit.js';
+import { CalcPrompt } from './Calc.js';
 
 // Create Menu Prompt as a function to pass on.
 export function Menu() {
@@ -28,17 +29,20 @@ export function Menu() {
                 case 'Open Calc (Two Args)': 
                 {
                     console.clear();
-                    Exit();
+                    CalcPrompt.Two_Args();
+                    break;
                 }
                 case 'Open Calc (Varargs)': 
                 {
                     console.clear();
-                    Exit();
+                    CalcPrompt.Varargs();
+                    break;
                 }
-                case 'Open Calc (Single Args)': 
+                case 'Open Calc (Single Arg)': 
                 {
                     console.clear();
-                    Exit();
+                    CalcPrompt.Single_Arg();
+                    break;
                 }
                 case 'Exit Calc': 
                 {

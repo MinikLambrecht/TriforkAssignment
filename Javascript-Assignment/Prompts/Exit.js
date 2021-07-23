@@ -33,7 +33,8 @@ function ExitCountdown(seconds) {
     // Give the user a choice to cancel, by adding a keypress event.
     // Clearing the interval, and console, then opening the menu again.
     process.stdin.on('keypress', function (ch, key) {
-        if (key.name == 'c') {
+        if (key.name == 'c')
+        {
             clearInterval(interval);
             console.clear();
             Menu();
@@ -57,8 +58,7 @@ export function Exit() {
         {
             case true:
             {
-                // Exit the current process.
-                // process.exit(0);
+                // Exit the current process, after a countdown.
                 ExitCountdown(3);
                 break;
             }
