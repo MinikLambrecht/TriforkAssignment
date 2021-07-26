@@ -6,13 +6,17 @@
   "repository": "https://github.com/MinikLambrecht/TriforkAssignment.git",
   "author": "Minik Gaarde Lambrecht <MinikGLambrecht@hotmail.com>",
   "license": "UNLICENSED",
-  "type": "module",
-  "private": false,
+  "private": true,
   "scripts": {
-    "start": "node App.js"
+    "start": "node App.js",
+    "build": "webpack"
   },
   "dependencies": {
     "inquirer": "^8.1.1",
     "node-regexp": "^0.1.1"
+  },
+  "devDependencies": {
+    "webpack": "^5.46.0",
+    "webpack-cli": "^4.7.2"
   }
 }
