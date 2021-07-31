@@ -2,18 +2,18 @@
   "name": "javascript-assignment",
   "version": "1.0.0",
   "description": "Javascript based assignment, from Trifork.",
-  "main": "App.js",
+  "main": "App.mjs",
   "repository": "https://github.com/MinikLambrecht/TriforkAssignment.git",
   "author": "Minik Gaarde Lambrecht <MinikGLambrecht@hotmail.com>",
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
-    "start": "node App.js",
-    "build": "webpack"
+    "start": "node App.mjs",
+    "build": "webpack",
+    "prod": "node build/app.min.js"
   },
   "dependencies": {
-    "inquirer": "^8.1.1",
-    "node-regexp": "^0.1.1"
+    "inquirer": "^8.1.1"
   },
   "devDependencies": {
     "webpack": "^5.46.0",

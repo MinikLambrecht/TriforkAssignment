@@ -2,8 +2,8 @@
 import inquirer from 'inquirer';
 
 // Import Prompts
-import { Exit } from './Exit.js';
-import { CalcPrompt } from './Calc.js';
+import { Exit } from './Exit.mjs';
+import { CalcPrompt } from './Calc.mjs';
 
 // Create Menu Prompt as a function to pass on.
 export function Menu() {

@@ -1,11 +1,11 @@
 // Import the inquirer library
 import inquirer from 'inquirer';
 
-// Import the calc prompt.
-import { Menu } from './Menu.js';
+// Import the main menu prompt.
+import { Menu } from './Menu.mjs';
 
 // Import custom logging functionality
-import { Log, LogVariable, LoggingOptions } from '../Functions/CustomLogging.js';
+import { Log, LogVariable, LoggingOptions } from '../Functions/CustomLogging.mjs';
 
 export function ResultPrompt(res) {
     // Register a new prompt as the type 'confirm', for a more direct question, 

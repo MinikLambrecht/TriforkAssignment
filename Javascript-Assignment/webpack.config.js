@@ -1,9 +1,13 @@
 const path = require('path');
 
 module.exports = {
-  entry: './App.js',
-  output: {
-    filename: 'SimpleCalculator.js',
-    path: path.resolve(__dirname, 'build'),
+  mode: 'production',
+  entry: {
+    app: `${__dirname}/App.mjs`
   },
+  target: 'node',
+  output: {
+    path: path.resolve(__dirname, 'build'),
+    filename: '[name].min.js'
+  }
 };

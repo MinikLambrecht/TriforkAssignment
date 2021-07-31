@@ -8,10 +8,10 @@ import { createRequire } from "module";
 const require = createRequire(import.meta.url);
 
 // Import test functions for the equations, to divide the operations and to correct the syntax if wrong.
-import { TestEquation_Two_Args, TestEquation_Varargs, TestEquation_Single_Arg } from '../Functions/CheckEquation.js';
+import { TestEquation_Two_Args, TestEquation_Varargs, TestEquation_Single_Arg } from '../Functions/CheckEquation.mjs';
 
 // Import custom logging functionality
-import { Log, LogVariable, LoggingOptions } from '../Functions/CustomLogging.js';
+import { Log, LogVariable, LoggingOptions } from '../Functions/CustomLogging.mjs';
 
 // Get all information from package.json, to use in the program.
 const info = require('../package.json');

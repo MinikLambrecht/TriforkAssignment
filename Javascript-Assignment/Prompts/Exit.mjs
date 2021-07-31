@@ -2,7 +2,7 @@
 import inquirer from 'inquirer';
 
 // Import Menu Prompt in case of the user was not trying to exit.
-import { Menu } from './Menu.js';
+import { Menu } from './Menu.mjs';
 
 // Create a countdown before closing, giving the user some extra time,
 // if they end up regretting.

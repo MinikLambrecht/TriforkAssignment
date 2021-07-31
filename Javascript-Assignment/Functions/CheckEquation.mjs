@@ -1,9 +1,20 @@
-import { Multiply, Divide, Add, Subtract } from './CalcFunctions.js';
-import { RegexFunctions } from './RegexFunctions.js';
+// Add basic calculator functionalities.
+import { Multiply, Divide, Add, Subtract } from './CalcFunctions.mjs';
 
-import { ResultPrompt } from '../Prompts/Result.js';
+// Import regex functionalities, to test and correct.
+import { RegexFunctions } from './RegexFunctions.mjs';
 
-function RegexNoMatch()
+// Import prompts.
+import { ResultPrompt } from '../Prompts/Result.mjs';
+
+// Custom enum to define which arg type to reset to if failing.
+// const CurrentArgType = {
+//     Two_Args,
+//     Varargs,
+//     Single_Arg
+// };
+
+function RegexNoMatch(argType)
 {
     console.log('Error');
 }
